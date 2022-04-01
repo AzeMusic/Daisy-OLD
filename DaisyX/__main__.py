@@ -79,7 +79,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="💫 Add Daisy to your group 💫", url="t.me/daisyXBot?startgroup=true"
+            text="💫 Ledy Help Bot add me group 💫", url="t.me/SSmusicLedy_bot?startgroup=true"
         ),
     ],
 ]
@@ -101,7 +101,7 @@ HELP_STRINGS = f"""
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 You can donate to the original writer's of the Base code,
-Support them  [Inuka](t.me/InukaASiTH),[Jason](t.me/imjanindu),"""
+Support them  [mrbots](t.me/SOQrup),[bilimadam](t.me/ruzgar_alican),"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -118,7 +118,7 @@ USER_SETTINGS = {}
 GDPR = []
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("DaisyX.modules." + module_name)
+    imported_module = importlib.import_module("LedyX.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
@@ -361,7 +361,7 @@ def DaisyX_about_callback(update, context):
     if query.data == "aboutmanu_":
         query.message.edit_text(
             text=f"*😍 Hi again!  The name's {dispatcher.bot.first_name} 😍 \n\nAs  You I'm a next generational group management bot developed by Infinity_Bots.* "
-            f"\n\n 🔥 Join [Infinity_Bots](https://t.me/Infinity_Bots) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
+            f"\n\n 🔥 Join [Ledy_Bots](https://t.me/ledyplaylist) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
             f"\n\n I have the normal GROUP MANAGING functions like flood control, a warning system etc but I mainly have the advanced and handy Antispam system and the SIBYL banning system which safegaurds and helps your group from spammers."
             f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features [:)](https://telegra.ph/file/473cc17913393959e0667.jpg)"
             f"\n\n👇 You Can Know More About Me By Clicking The Below Buttons 👇",
@@ -398,7 +398,7 @@ def DaisyX_about_callback(update, context):
         query.message.edit_text(
             text=f"* ｢ BASIC HELP 」*"
             f"\nIf You Can Also Add {dispatcher.bot.first_name} To Your Chats By Clicking [Here](http://t.me/{dispatcher.bot.username}?startgroup=true) And Selecting Chat. \n"
-            f"\n\nYou Can get support {dispatcher.bot.first_name} by joining [InfinityJE](https://t.me/infinityje).\n"
+            f"\n\nYou Can get support {dispatcher.bot.first_name} by joining [mrsupport](https://t.me/Tenha055).\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -419,8 +419,8 @@ def DaisyX_about_callback(update, context):
     elif query.data == "aboutmanu_credit":
         query.message.edit_text(
             text=f"*{dispatcher.bot.first_name} Is the redisigned version of Daisy and Naruto for the best performance.*"
-            f"\n\nBased on [Daisy](https://github.com/inukaasith/daisy) + [Naruto](https://github.com/imjanindu/narutorobot)."
-            f"\n\n{dispatcher.bot.first_name}'s source code was written by InukaASiTH and Imjanindu"
+            f"\n\nBased on [Ledy](https://t.me/tenha055) + [mraga](https://t.me/ruzgar_alican)."
+            f"\n\n{dispatcher.bot.first_name}'s source code was written by support<3"
             f"\n\nIf Any Question About {dispatcher.bot.first_name}, \nLet Us Know At @{SUPPORT_CHAT}.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
